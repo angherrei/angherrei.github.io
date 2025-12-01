@@ -1,3 +1,67 @@
+*{
+
+
+}
+
+
+body {
+
+  background-color: #F1F0FF;
+
+  text-align: center;
+
+}
+
+
+h1 {
+
+    text-align: center;
+
+    background-color: #8C489F;
+
+
+}
+
+
+img {
+
+  border: solid black 5px;
+
+  margin-right: 60px;
+
+}
+
+
+ul {
+
+
+}
+
+
+li {
+
+
+}
+
+
+p {
+
+
+}
+
+
+#header {
+
+    border-bottom: 5px solid black ;
+
+}
+
+
+#content{
+
+  
+
+}
 *{  
     margin: 0;
     padding: 0;
@@ -6,7 +70,7 @@
 }
 
 body {
-    background-color: #E6E6FA;
+    background-color: #E8CFC0;
     font-family: Arial, sans-serif;
     line-height: 1.5;
     
@@ -15,7 +79,8 @@ body {
 h1 {
 
     font-size: 1.8em;
-  text-align: center;
+   text-align: center;
+   color: #8D543B;
 }
 
 img {
@@ -33,6 +98,10 @@ ul {
 
 li {
     display: inline-block;
+   border-left: 5px solid red; 
+    padding-left: 10px; 
+    margin-right: 10px;
+}
 
 }
 
@@ -41,68 +110,264 @@ p {
   text-align: justify;
 }
 
-#header {
-  
+#header { 
+  background-color: #8D543B;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 5px solid black;
 }
 
-#content{
+#content {
+    width: 90%;
+    max-width: 900px;
+   margin: 20px auto; 
+   background-color: white;
+   padding: 20px;
   
 }
 
 #text {
+  padding: 10px;
+  overflow: auto;
   
 }
 
 #text p {
-  
+  border: 1px solid #958B86;
+  padding: 10px;
+  text-align: justify;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  text-indent: 40px;
+  width: 90%;
+  margin: 10px auto;
+
 }
 
 #text p:first-child {
 
-     background-image: url('fondoParrafo.png');
-     background-repeat: repeat; 
-     background-size: auto;
-     background-position: center center;
-     margin-top: 0;
-  
+    background-image: url('../images/fondoParrafo.png');
+    background-repeat: repeat;
+   border-radius: 30px 30px 0 0;
 }
 
-#text p:last-child {
+  
 
+
+#text p:last-child {
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 0;
 }
 
 #menu {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: #F0F0F0;
 
 }
 
 #menu a{
+  text-decoration: none;
+  color: #333;
+  padding: 0 12px;
+  font-weight: bold;
 
 }
 
 
 #menu li{
+  color: red; 
+  text-decoration: underline;
+  text-decoration-color: red;
 
 }
 
 #menu li a:hover{
+    color: red; 
+    text-decoration: underline;
+    text-decoration-color: red;
 
 }
 
 #footer{
+  text-align: center;
+  font-size: 0.8em;
+  padding: 15px 0;
+  background-color: #FAFAFA;
+  border-top: 5px solid black;
 
 }
 
 #footer a{
+  text-decoration: none;
+  color: #666;
 
 }
 
 #footer a:hover{
+  color: #000;
 
 }
 #image {
+    width: 100%;
+    margin: 10px 0;
 
 }
 
 @media all and (max-width: 500px) {
+     #content img, #text img {
+    border: 2px solid red; 
+        
+        /* Req. 13.3: El tamaño debe ser el 90% del total */
+        width: 90%; 
+        
+        /* Req. 13.4: La imagen aparece en el centro */
+        float: none; /* Quitamos la alineación derecha */
+        display: block; /* Para poder usar margin auto */
+        margin: 20px auto; /* Centrado horizontal */
+    }
+    #text p {
+        width: 95%;
+    }
+}
+
+#text {
+
+     width: 90%;
+
+     margin: 0 auto;
+}
+
+
+#text p {
+
+       border: black dashed;
+
+     box-shadow: 5px 5px 5px  black;
+
+     text-indent: 40px;
+
+     padding: 10px;
+
+     background-color: #C3C3E5;
+
+    
+
+}
+
+
+#text p:first-child {
+
+   border-top-right-radius: 30px;
+
+    border-top-left-radius: 30px;
+
+    background-image: url(../images/fondoParrafo.png);
+
+
+  
+
+}
+
+
+#text p:last-child {
+
+     border-bottom-right-radius: 30px;
+
+    border-bottom-left-radius: 30px;
+
+
+}
+
+
+#menu {
+
+
+}
+
+
+#menu a{
+
+
+}
+
+
+
+
+#menu li{
+
+    display: inline; 
+
+    border-left: 5px red solid;
+
+
+}
+
+
+#menu li a:hover{
+
+    border-bottom: 5px red solid;
+
+    
+
+
+}
+
+
+#footer{
+
+    border-top: 5px ;
+
+    background-color: #443266;
+
+
+}
+
+
+#footer a{
+
+
+}
+
+
+#footer a:hover{
+
+
+}
+
+#image {
+
+    text-align: right;
+
+    
+
+
+}
+
+
+@media all and (max-width: 500px) {
+
+    img {
+
+  border: solid red 5px;
+
+  width: 90%;
+
+  margin-right: 0px;
+
+  margin-left: 0px;
+
+  }
+
+#image {
+
+    text-align: center;
+
+}
 
 }
