@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    background-image: url("images/congeladortupper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ===== ENCABEZADO ===== */
+h1 {
+    text-align: center;
+    margin: 0;
+    background-color: #1345e9;
+    width: 100%;
+    
+}
+
+hr {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid rgb(212, 13, 179);
+}
+
+/* ===== CONTENEDORES ===== */
+div {
+    width: 100%;
+}
+
+/* ===== TABLA ===== */
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+/* ===== IMAGEN ===== */
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+/* ===== LISTA ===== */
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    margin: 15px 0;
+}
+
+/* ===== ENLACES ===== */
+a {
+    color: rgba(30, 0, 161, 0.733);
+    text-decoration:solid;
+    font-size: 250%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
