@@ -1,0 +1,202 @@
+*{
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../images/fondodisco.jpg');
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  font-family: 'Indie Flower', cursive;
+  
+}
+
+#textCookie {
+  text-align: center;
+}
+
+#cookieEU {
+  position: relative;
+  margin-top: 200px;
+  border:2px solid rgb(225, 0, 255);
+  background-color: white;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  box-shadow: 2px 2px 50px black;
+  text-align: center;
+  width: 60%;
+  max-width: 500px;
+}
+#header {
+  margin-top: 35px;
+  text-align: center;
+  background-color: #FF9900;
+  border-bottom: 5px solid #6599FF;
+  border-top: 5px solid #6599FF;
+  color: white;
+  padding-top: 10px;
+  
+}
+
+#menu {
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;  
+  background-color: #097054;
+  border: 1px dashed #FF9900;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2em;
+}
+
+#menu a{
+  color: white;
+  text-decoration: none;
+}
+
+
+#menu li{
+  display: inline;
+  padding-left: 5px;  
+}
+
+#menu li a:hover{
+  
+    text-decoration: underline solid rgb(0, 47, 255);
+    background-color: rgb(16, 158, 177);
+}
+
+#contenido {
+  background-color: #686060; /* o cualquier color que quieras */
+  padding: 20px;             /* espacio interno para que no toque los bordes */
+ 
+         
+  width: 100%;                /* ajusta el ancho a tu gusto */
+  border-top: dashed violet 5px;
+margin: 100px auto 0  auto;
+  position: relative;
+  
+}
+#estopa, #elvis  {
+  display: flex;
+  align-items: center; /* centra verticalmente imagen y texto */
+  margin-top: 40px;   /* separación con otros bloques */
+  margin-bottom: 0;
+  border-radius: 30px;
+  border: dashed black 5px;
+  background-color: #8b7e7e;
+  margin-right: 400px;
+}
+
+#textoestopa, #textoelvis {
+  
+  padding: 15px;
+  width: 100%;
+  
+  
+ 
+}
+
+#fotoestopa, #fotoelvis {
+  border: 5px dashed rgb(252, 0, 218);
+  border-radius: 30px;
+  padding: 15px;
+  margin-right: 5px; /* espacio entre imagen y texto */
+}
+
+#fotoestopa img, #fotoelvis img {
+  width: 250px;  /* tamaño fijo de la imagen */
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Menú lateral redes */
+#redes {
+  position: absolute;   /* flotante dentro del contenedor */
+  top: 20px;            /* desde arriba del contenido */
+  right: 80px;          /* pegado al borde derecho del contenedor */
+  width: 60px;          /* ancho fijo del menú */
+  padding-right: 0;
+}
+
+#redes ul {
+  list-style: none;     /* quitar viñetas */
+  padding: 0;
+  margin: 0;
+}
+
+#redes li {
+  margin-bottom: 15px;  /* espacio entre imágenes */
+}
+
+#redes img {
+  width: 100px;           /* tamaño de los íconos */
+  height: auto;
+  background-image: red;
+  border-radius: 10px;   /* opcional: bordes redondeados */
+}
+
+#footer{
+position: fixed;
+  bottom: 0;
+ width: 100%;
+  background-color: #097054;
+  text-align: center;
+  color: white;
+  border-top: 5px dashed #FF9900;
+  clear: both;
+}
+
+#footer a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#footer a:hover{
+  color: #443266;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+
+}
+
+@media (max-width: 900px) {
+  /* Bloques apilados en vertical */
+  .bloque {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloque img {
+    margin: 0 0 15px 0;
+  }
+
+  #redes {
+    right: 20px;
+    top: 10px;
+  }
+
+  #cookieEU {
+    width: 80%;
+    margin-left: -40%;  /* mitad de width */
+    margin-top: -120px;  /* ajustar según contenido */
+  }
+}
+
+@media (max-width: 500px) {
+  #menu li {
+    display: inline;
+    padding: 5px 0;
+  }
+
+  #cookieEU {
+    width: 90%;
+    margin-left: -45%;
+    margin-top: -140px;
+  }
+
+  #redes {
+    display: inline;
+  }
+}
